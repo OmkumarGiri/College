@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            border: 2px solid white;
+            margin: 10px;
+            border-radius: 20px;
+
+        }
+
+        #logo img {
+            width: 80px;
+            border-radius: 50px;
+        }
+
+        #logo {
+            margin: 10px 20px;
+        }
+
+        #navbar {
+            position: relative;
+        }
+
+        #navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        #navbar ul li {
+            font-size: 1.3rem;
+            list-style: none;
+        }
+
+        #navbar ul li a {
+            display: block;
+            padding: 5px;
+            margin: 5px;
+            text-decoration: underline;
+            color: white;
+            border-radius:10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: all 0.4s ease 0s;
+        }
+
+        #navbar ul li a:hover {
+            /* display: block;
+            padding: 5px;
+            margin: 5px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            border-radius: 10px; */
+            /* transform: scale(1.1); */
+            transform: translateY(-10PX);
+            height: 25px;
+            padding: 5px;
+            margin: 5px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            border-radius:10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 20px;
+            height: 100px;
+            margin: 110px 10px 210px 10px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+        }
+
+        #home::before {
+            content: "";
+            background: url(bg.jpeg) no-repeat center top/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            margin:0px;
+            padding:0px;
+        }
+
+        #home h1 {
+            color: white;
+            text-shadow: 5px 5px 20px black;
+            text-align: center;
+            margin: 20px;
+
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1rem;
+            width: 1000px;
+        }
+
+        .h-primary {
+            font-size: 2.5rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-size: 2.5rem;
+            padding: 12px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: rgba(255, 255, 255, 0.108);
+            color: white;
+            margin: 20px 10px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .service-container {
+            margin: 330px 0px 0px 0px;
+            color: white;
+        }
+
+        .service-container h1 {
+            text-decoration: overline;
+        }
+
+        #services {
+            display: flex;
+            margin: 34px;
+        }
+
+        #services .box {
+            margin: 0px 10px;
+            border: 2px solid white;
+            border-radius: 20px;
+            padding: 20px;
+            /* color: black; */
+            background-color: rgba(255, 255, 255, 0.325);
+        }
+
+        #services .box img {
+            display: block;
+            margin: auto;
+            height: 100px;
+            border-radius: 50px;
+            border: 2px solid white;
+
+        }
+
+        #services .box p {
+            font-size: 0.9rem;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .clients-container h1 {
+            color: white;
+            text-shadow: 5px 5px 10px black;
+            
+            
+
+        }
+        .clients-container {
+            color: white;
+        }
+
+        #clients::before {
+            content: "";
+            background: url(bg.jpeg) no-repeat center center/cover;
+            position: absolute;
+            height: 40%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.6;
+            border-radius: 20px;
+
+        }
+
+        #clients .box img {
+            display: inline-block;
+        
+            width: 130px;
+
+
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #clients .box h1 {
+            color: white;
+            text-shadow: 5px 5px 10px black;
+            text-align: center;
+            margin: 50px;
+            text-decoration: overline;
+            position: relative;
+            top: 30px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 9px 20px;
+            margin: 0px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="icon1.jpg" alt="">
+        </div>
+        <ul>
+            <li class="items"><a href="index.html">Home</a></li>
+            <li class="items"><a href="Log.html">Login</a></li>
+            <li class="items"><a href="aboutus.html">About</a></li>
+            <li class="items"><a href="contactus.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome To The Best College of India</h1>
+
+        <p> We at the OMG College of Engineering, Wagholi, Pune imbibe and
+            impart the same as an indispensable aspect of our education system. We disseminate quality
+            education and continue to practice excellence as our core facet. We harbor the finest amenities
+            to ensure the best learning paradigm for our students of Engineering branch.
+
+        </p>
+        <button class="btn">Learn More</button>
+    </section>
+    <section class="service-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="teaching.jpg" alt="">
+                <h2 class="h-secondary center">Teaching</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quod cumque aut
+                    eligendi placeat possimus quo asperiores consequuntur magni ratione beatae itaque, aperiam ipsum,
+                    deserunt quasi numquam. Quo, doloremque dicta!</p>
+            </div>
+            <div class="box">
+                <img src="practical.jpg" alt="">
+                <h2 class="h-secondary center">Practicals</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quod cumque aut
+                    eligendi placeat possimus quo asperiores consequuntur magni ratione beatae itaque, aperiam ipsum,
+                    deserunt quasi numquam. Quo, doloremque dicta!</p>
+            </div>
+            <div class="box">
+                <img src="sports.jpg" alt="">
+                <h2 class="h-secondary center">Sports</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quod cumque aut
+                    eligendi placeat possimus quo asperiores consequuntur magni ratione beatae itaque, aperiam ipsum,
+                    deserunt quasi numquam. Quo, doloremque dicta!</p>
+            </div>
+        </div>
+    </section>
+    <section class="clients-container">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="box">
+
+                <img src="i.png" alt="">
+            </div>
+            <div class="box">
+                <img src="m.png" alt="">
+            </div>
+            <div class="box">
+                <img src="s.png" alt="">
+            </div>
+            <div class="box">
+                <img src="cap.png" alt="">
+
+            </div>
+            <div class="box">
+                <img src="cog.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.omgCollegeOfEngineering.com. All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
