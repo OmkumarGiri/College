@@ -39,17 +39,20 @@ public class EditCourseServlet extends HttpServlet {
         
   
         
-        out.print("<link rel='stylesheet' href='css/editCourse.css'>");
+        out.print("<link rel='stylesheet' href='css/add.css'>");
 	
 		out.print("<body>");
 		out.print(" <div class='clg_box'>");
-		out.print("	<div id='logo'>");
+		out.print("	<div class='logo'>");
 		out.print("  <img src='icon1.jpg' alt=''>");
 				out.print(" </div>");
 		out.print("  OM. G. COLLEGE");
 		out.print(" </div>");
 		out.print("<div class='intro_bar'>");
-		out.print("Student Header");
+		out.print("		<a href='index.html' class='n'>Home</a>");
+		out.print("<a href='Log.html' class='n'>Login</a>");
+				out.print("<a href='aboutus.html' class='n'>About</a>");
+						out.print(" <a href='contactus.html' class='n'> Contact us</a>");
 		out.print("  </div>");
 		out.print("<div class='out'>");
 		out.print(" <a href='StudentLogin.jsp' class='button'><img src='lo1.png' alt='' style='width:30px;height:23px;margin:2px;'>Log Out</a>");
@@ -59,12 +62,14 @@ public class EditCourseServlet extends HttpServlet {
 		
 		out.print("<div class='menu'>");
 		out.print("<a href='StudentPanel1?name="+e.getLog_name()+"' class='m'><img src='ms.png' alt='' style='width:30px;height:23px;margin:2px;'>Student</a>");
+		out.print("<hr>");
 		out.print("<a href='EditCourseServlet?id="+e.getId()+"' class='m'><img src='mcr.png' alt='' style='width:30px;height:23px;margin:2px;'>Course registration</a>");
+		out.print("<hr>");
 		out.print("<a href='ViewStudentAnnouncementServlet?name="+e.getLog_name()+"' class='m'><img src='mann.png' alt='' style='width:30px;height:23px;margin:2px;'>Announcement</a>");
-		
+		out.print("<hr>");
 
 		out.print("</div>");
-		out.print("<div class='list'>");
+		out.print("<div class='list3'>");
 		
          
 		out.println("<h1 style='color:black;'>Course Registration</h1>"); 

@@ -33,27 +33,32 @@ public class EditStaffServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 response.setContentType("text/html");  
 	        PrintWriter out=response.getWriter();  
-	        out.print("<link rel='stylesheet' href='css/AdminViewStudents.css'>");
+	        out.print("<link rel='stylesheet' href='css/add.css'>");
 			out.print("<link rel='stylesheet' href=''>");
 			out.print("<body>");
 			out.print(" <div class='clg_box'>");
-			out.print("	<div id='logo'>");
+			out.print("	<div class='logo'>");
 			out.print("  <img src='icon1.jpg' alt=''>");
 					out.print(" </div>");
 			out.print("  OM. G. COLLEGE");
 			out.print(" </div>");
 			out.print("<div class='intro_bar'>");
-			out.print("Admin Header");
-			out.print("  </div>");
+			out.print("		<a href='index.html' class='n'>Home</a>");
+			out.print("<a href='Log.html' class='n'>Login</a>");
+					out.print("<a href='aboutus.html' class='n'>About</a>");
+							out.print(" <a href='contactus.html' class='n'> Contact us</a>");			out.print("  </div>");
 			out.print("<div class='out'>");
 			out.print(" <a href='login.jsp' class='button'><img src='lo1.png' alt='' style='width:30px;height:23px;margin:2px;'>Log Out</a>");
 			out.print("</div>");
 			out.print("<div class='menu'>");
 
 			out.print("<a href='ViewServlet' class='m'><img src='ms.png' alt='' style='width:30px;height:23px;margin:2px; '>Students</a>");
+			out.print("<hr>");
 			out.print("<a href='ViewStaffServlet' class='m'><img src='mstf.png' alt='' style='width:30px;height:23px;margin:2px;'>Staff</a>");
+			out.print("<hr>");
 			out.print("<a href='ViewAnnouncementServlet' class='m'><img src='mann.png' alt='' style='width:30px;height:23px;margin:2px;'>Announcement</a>");
-
+			out.print("<hr>");
+			
 			out.print("</div>");
 			out.print("<div class='list'>");
 	

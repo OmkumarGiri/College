@@ -32,24 +32,26 @@ public class RegistrationSuccessful extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");  
 		PrintWriter out=response.getWriter();  
-		out.print("<link rel='stylesheet' href='css/a.css'>");
+		out.print("<link rel='stylesheet' href='css/add.css'>");
 		out.print("<link rel='stylesheet' href=''>");
 		out.print("<body>");
 		out.print(" <div class='clg_box'>");
-		out.print("	<div id='logo'>");
+		out.print("	<div class='logo'>");
 		out.print("  <img src='icon1.jpg' alt=''>");
 				out.print(" </div>");
 		out.print("  OM. G. COLLEGE");
 		out.print(" </div>");
 		out.print("<div class='intro_bar'>");
-		out.print("Student Header");
-		out.print("  </div>");
+		out.print("		<a href='index.html' class='n'>Home</a>");
+		out.print("<a href='Log.html' class='n'>Login</a>");
+				out.print("<a href='aboutus.html' class='n'>About</a>");
+						out.print(" <a href='contactus.html' class='n'> Contact us</a>");		out.print("  </div>");
 		out.print("<div class='out'>");
 		out.print("  <a href='StudentLogin.jsp'><button>Log Out</button></a>");
 		out.print("</div>");
 		
 		
-		out.print("<div class='list'>");
+		out.print("<div class='list2'>");
 		out.print("<h1>Registration Successful</h1>");
 		out.print("  <h3><a href='StudentLogin.jsp' >OK</a></h3>");
 		out.print("</div>");

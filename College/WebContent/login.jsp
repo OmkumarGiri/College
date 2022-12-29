@@ -12,7 +12,7 @@
 }
 
 body {
-	background: url(bg.jpeg) no-repeat center top/cover;
+	background: url(bg.jpeg) center top;
 	font-size: x-large;
 	width: 100%;
 	height: 500px;
@@ -26,25 +26,27 @@ body {
 	align-items: center;
 	font-size: x-large;
 	width: 100%;
-	height: 500px;
+	height: 100vh;
 	padding: 0%;
 }
 
 .container {
 	border: 2px solid black;
-	background-color: rgba(255, 255, 255, 0.7);
-	width: 30%;
-	height: 80%;
+	background-color: rgba(255, 255, 255, 0.492);
+	width: 44%;
+    height: 22%;
 	padding: 20px;
 	display: flex;
 	flex-flow: column wrap;
-	justify-content: center;
 	align-items: center;
+	justify-content:center;
 }
+
 
 h1 {
 	margin: 5px;
-	font-size: 50px;
+	font-size: 70px;
+	
 }
 
 .container input {
@@ -88,7 +90,7 @@ input[type=submit]:hover {
  padding:10px;
  border:2px solid black;
  }
-  footer{
+    footer{
  
            color:white;
            font-size:0.8rem;

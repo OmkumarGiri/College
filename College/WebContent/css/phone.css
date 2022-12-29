@@ -1,0 +1,44 @@
+@CHARSET "ISO-8859-1";
+#navbar{
+    flex-direction: column;
+} 
+#services{
+    flex-direction: column;
+    width: 100%;
+}
+.box{
+    margin: 10px;
+}
+#clients{
+    overflow: hidden;
+}
+#home p{
+    width: 70%;
+
+}
+#home h1 {
+    color: white;
+    text-shadow: 5px 5px 20px black;
+    text-align: center;
+    margin: 20px;
+    width: 40vh;
+    font-size: 30px;
+}
+.btn{
+    position: relative;
+            top: 70px;
+}
+
+
+
+.service-container h1 {
+    text-decoration: overline;
+    font-size: 32px;
+}
+#clients .box img {
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+
+
+}

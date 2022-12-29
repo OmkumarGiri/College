@@ -11,7 +11,7 @@
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body {
-	background: url(bg.jpeg) no-repeat center top/cover;
+	background: url(bg.jpeg) center top;
 	font-size: x-large;
 	width: 100%;
 	height: 500px;
@@ -25,62 +25,71 @@ body {
 	align-items: center;
 	font-size: x-large;
 	width: 100%;
-	height: 500px;
+	height: 100vh;
 	padding: 0%;
 }
-        .container{
-            border: 2px solid black;
-            background-color:rgba(255, 255, 255, 0.492);
-            width: 30%;
-            height: 80%;
-            padding: 20px;
-            display: flex;
-            flex-flow: column wrap;
-            align-items: center;
-        }
-        h1{
-            margin: 5px;
-            font-size:40px;
-        }
-        .container input{
-            border:2px solid black;
-            margin: 10px;
-            padding: 2px;
-            text-align: center;
-            font-size: large;
-            width: 60%;
-            border-radius: 10px;
-        }
-        select{
-            border:2px solid black;
-            margin: 10px;
-            padding: 2px;
-            text-align: center;
-            font-size: large;
-            width: 3    0%;
-            border-radius: 10px;
-        }
-        input[type=submit]{
-        	border:1px solid black;
-            margin: 10px;
-            padding: 2px;
-            text-align: center;
-            font-size: large;
-            width: 30%;
-            border-radius: 10px;
-        }
-        input[type=submit]:hover{
-            background-color: lemonchiffon;
-        }
-         .container img{
-  width:110px;
- heigth:110px;
+
+.container {
+	border: 2px solid black;
+	background-color: rgba(255, 255, 255, 0.492);
+	width: 50%;
+    height: 22%;
+	padding: 20px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content:center;
+}
+
+
+h1 {
+	margin: 5px;
+	font-size: 70px;
+	
+}
+
+.container input {
+	border: 2px solid black;
+	margin: 10px;
+	padding: 2px;
+	text-align: center;
+	font-size: large;
+	width: 60%;
+	border-radius: 10px;
+}
+
+select {
+	border: 2px solid black;
+	margin: 10px;
+	padding: 2px;
+	text-align: center;
+	font-size: large;
+	width: 3 0%;
+	border-radius: 10px;
+}
+
+input[type=submit] {
+	border: 1px solid black;
+	margin: 10px;
+	padding: 2px;
+	text-align: center;
+	font-size: large;
+	width: 30%;
+	border-radius: 10px;
+}
+
+input[type=submit]:hover {
+	background-color: lemonchiffon;
+}
+
+ .container img{
+  width:100px;
+ heigth:100px;
  margin:20px;
  padding:10px;
  border:2px solid black;
-
  }
-  footer{
+    footer{
  
            color:white;
            font-size:0.8rem;
@@ -94,6 +103,17 @@ body {
 	align-items: center;
 	justify-content: center;
         }
+/* #home::before {
+            content: "";
+            background: url(bg.jpeg) no-repeat center top/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            margin:0px;
+            padding:0px;
+        }*/
 </style>
 </head>
 <body>
